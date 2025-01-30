@@ -1,3 +1,5 @@
 # Container image that runs your code
 FROM alpine:latest
-CMD echo "Hello World"
+COPY entrypoint.sh /entrypoint.sh
+RUN chmod +x entrypoint.sh
+ENTRYPOINT [ "/entrypoint.sh" ]
