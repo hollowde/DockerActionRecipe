@@ -1,2 +1,2 @@
 #!/bin/sh -l
-echo "hello world"
+echo "hello s@"
